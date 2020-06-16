@@ -1,0 +1,39 @@
+slots:
+  cuisine:
+    type: unfeaturized
+  location:
+    type: unfeaturized
+  matches:
+    type: unfeaturized
+  latitude:
+    type: unfeaturized
+  longitude:
+    type: unfeaturized
+
+entities:
+- location
+- cuisine
+
+intents:
+ - greet
+ - inform
+ - thankyou
+
+responses:
+  utter_goodbye:
+    - text: "goodbye :("
+    - text: "Bye-bye"
+  utter_ack_dosearch:
+    - text: "ok let me see what I can find"
+  utter_ask_cuisine:
+    - text: "what kind of cuisine would you like?"
+  utter_ask_howcanhelp:
+    - text: "Hi! I am a bot that can help you find the best rated restaurant according to your cuisine preference. How can I help you?"
+  utter_ask_location:
+    - text: "where?"
+  utter_on_it:
+    - text: "I'm on it"
+
+actions:
+- action_search_restaurants
+- action_suggest
